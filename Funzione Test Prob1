@@ -1,0 +1,142 @@
+ f = 16.0		 nf = 3		 violazione dei vincoli, disuguaglianza: [ 0.  0. -4. -4.  0. -4.  0.  0. -4.] , uguaglianza : [12.]		il punto non è di KKT, perchè moltiplicatori mu: [2400.]lambda non negativi: [0. 0. 0. 0. 0. 0. 0. 0. 0.]  ammissibilità vincoli di disuguaglianza: [ 0.  0. -4. -4.  0. -4.  0.  0. -4.]  ammissibilità vincoli di uguaglianza: [12.]  complementarietà: [ 0.  0. -0. -0.  0. -0.  0.  0. -0.]  gradiente lagrangiano sufficientemente piccolo: 16.431676725154983
+
+ f = 17.006539871448627		 nf = 8		 violazione dei vincoli, disuguaglianza: [ 2.76307027e-03  5.37968684e-03 -4.00537969e+00 -3.74229883e+00
+ -2.57701166e-01 -2.82075877e+00 -1.17924123e+00 -3.87062868e-01
+ -3.61293713e+00] , uguaglianza : [0.00080879]		il punto non è di KKT, perchè moltiplicatori mu: [0.16175722]lambda non negativi: [0.55261405 1.07593737 0.         0.         0.         0.
+ 0.         0.         0.        ]  ammissibilità vincoli di disuguaglianza: [ 2.76307027e-03  5.37968684e-03 -4.00537969e+00 -3.74229883e+00
+ -2.57701166e-01 -2.82075877e+00 -1.17924123e+00 -3.87062868e-01
+ -3.61293713e+00]  ammissibilità vincoli di uguaglianza: [0.00080879]  complementarietà: [ 0.00152691  0.00578821 -0.         -0.         -0.         -0.
+ -0.         -0.         -0.        ]  gradiente lagrangiano sufficientemente piccolo: 30365.035425294773
+
+ f = 17.00654004448148		 nf = 13		 violazione dei vincoli, disuguaglianza: [ 2.76241941e-03  5.37995053e-03 -4.00537995e+00 -3.74231403e+00
+ -2.57685971e-01 -2.82073872e+00 -1.17926128e+00 -3.87066105e-01
+ -3.61293389e+00] , uguaglianza : [0.00080818]		il punto non è di KKT, perchè moltiplicatori mu: [0.16163535]lambda non negativi: [0.55248388 1.07599011 0.         0.         0.         0.
+ 0.         0.         0.        ]  ammissibilità vincoli di disuguaglianza: [ 2.76241941e-03  5.37995053e-03 -4.00537995e+00 -3.74231403e+00
+ -2.57685971e-01 -2.82073872e+00 -1.17926128e+00 -3.87066105e-01
+ -3.61293389e+00]  ammissibilità vincoli di uguaglianza: [0.00080818]  complementarietà: [ 0.00152619  0.00578877 -0.         -0.         -0.         -0.
+ -0.         -0.         -0.        ]  gradiente lagrangiano sufficientemente piccolo: 0.007275404968704638
+
+ f = 17.011377867788823		 nf = 18		 violazione dei vincoli, disuguaglianza: [ 9.66805461e-04  1.89703800e-03 -4.00189704e+00 -3.74276812e+00
+ -2.57231881e-01 -2.82099803e+00 -1.17900197e+00 -3.82099032e-01
+ -3.61790097e+00] , uguaglianza : [0.00028266]		il punto non è di KKT, perchè moltiplicatori mu: [0.05653282]lambda non negativi: [0.19336109 0.3794076  0.         0.         0.         0.
+ 0.         0.         0.        ]  ammissibilità vincoli di disuguaglianza: [ 9.66805461e-04  1.89703800e-03 -4.00189704e+00 -3.74276812e+00
+ -2.57231881e-01 -2.82099803e+00 -1.17900197e+00 -3.82099032e-01
+ -3.61790097e+00]  ammissibilità vincoli di uguaglianza: [0.00028266]  complementarietà: [ 0.00018694  0.00071975 -0.         -0.         -0.         -0.
+ -0.         -0.         -0.        ]  gradiente lagrangiano sufficientemente piccolo: 0.004653072762552253
+
+ f = 17.011378221392036		 nf = 23		 violazione dei vincoli, disuguaglianza: [ 9.66677295e-04  1.89678209e-03 -4.00189678e+00 -3.74276817e+00
+ -2.57231829e-01 -2.82099803e+00 -1.17900197e+00 -3.82098671e-01
+ -3.61790133e+00] , uguaglianza : [0.00028263]		il punto non è di KKT, perchè moltiplicatori mu: [0.16150296]lambda non negativi: [0.55238703 1.08387548 0.         0.         0.         0.
+ 0.         0.         0.        ]  ammissibilità vincoli di disuguaglianza: [ 9.66677295e-04  1.89678209e-03 -4.00189678e+00 -3.74276817e+00
+ -2.57231829e-01 -2.82099803e+00 -1.17900197e+00 -3.82098671e-01
+ -3.61790133e+00]  ammissibilità vincoli di uguaglianza: [0.00028263]  complementarietà: [ 0.00053398  0.00205588 -0.         -0.         -0.         -0.
+ -0.         -0.         -0.        ]  gradiente lagrangiano sufficientemente piccolo: 11.473375327391322
+
+ f = 17.013090951098796		 nf = 28		 violazione dei vincoli, disuguaglianza: [ 3.38324788e-04  6.65513354e-04 -4.00066551e+00 -3.74291890e+00
+ -2.57081098e-01 -2.82109684e+00 -1.17890316e+00 -3.80350931e-01
+ -3.61964907e+00] , uguaglianza : [9.89141419e-05]		il punto non è di KKT, perchè moltiplicatori mu: [0.05652237]lambda non negativi: [0.19332845 0.38029335 0.         0.         0.         0.
+ 0.         0.         0.        ]  ammissibilità vincoli di disuguaglianza: [ 3.38324788e-04  6.65513354e-04 -4.00066551e+00 -3.74291890e+00
+ -2.57081098e-01 -2.82109684e+00 -1.17890316e+00 -3.80350931e-01
+ -3.61964907e+00]  ammissibilità vincoli di uguaglianza: [9.89141419e-05]  complementarietà: [ 6.54078071e-05  2.53090300e-04 -0.00000000e+00 -0.00000000e+00
+ -0.00000000e+00 -0.00000000e+00 -0.00000000e+00 -0.00000000e+00
+ -0.00000000e+00]  gradiente lagrangiano sufficientemente piccolo: 0.0015963749114796168
+
+ f = 17.01309100688775		 nf = 33		 violazione dei vincoli, disuguaglianza: [ 3.38304452e-04  6.65473194e-04 -4.00066547e+00 -3.74291891e+00
+ -2.57081090e-01 -2.82109684e+00 -1.17890316e+00 -3.80350875e-01
+ -3.61964912e+00] , uguaglianza : [9.89084037e-05]		il punto non è di KKT, perchè moltiplicatori mu: [0.16148311]lambda non negativi: [0.5523338  1.08648685 0.         0.         0.         0.
+ 0.         0.         0.        ]  ammissibilità vincoli di disuguaglianza: [ 3.38304452e-04  6.65473194e-04 -4.00066547e+00 -3.74291891e+00
+ -2.57081090e-01 -2.82109684e+00 -1.17890316e+00 -3.80350875e-01
+ -3.61964912e+00]  ammissibilità vincoli di uguaglianza: [9.89084037e-05]  complementarietà: [ 0.00018686  0.00072303 -0.         -0.         -0.         -0.
+ -0.         -0.         -0.        ]  gradiente lagrangiano sufficientemente piccolo: 11.471029973401299
+
+ f = 17.01369276263395		 nf = 38		 violazione dei vincoli, disuguaglianza: [ 1.18405335e-04  2.33117108e-04 -4.00023312e+00 -3.74297149e+00
+ -2.57028512e-01 -2.82113130e+00 -1.17886870e+00 -3.79738333e-01
+ -3.62026167e+00] , uguaglianza : [3.46172002e-05]		il punto non è di KKT, perchè moltiplicatori mu: [0.05651788]lambda non negativi: [0.19331483 0.38059936 0.         0.         0.         0.
+ 0.         0.         0.        ]  ammissibilità vincoli di disuguaglianza: [ 1.18405335e-04  2.33117108e-04 -4.00023312e+00 -3.74297149e+00
+ -2.57028512e-01 -2.82113130e+00 -1.17886870e+00 -3.79738333e-01
+ -3.62026167e+00]  ammissibilità vincoli di uguaglianza: [3.46172002e-05]  complementarietà: [ 2.28895074e-05  8.87242225e-05 -0.00000000e+00 -0.00000000e+00
+ -0.00000000e+00 -0.00000000e+00 -0.00000000e+00 -0.00000000e+00
+ -0.00000000e+00]  gradiente lagrangiano sufficientemente piccolo: 0.0006711248611983868
+
+ f = 17.013692772034013		 nf = 43		 violazione dei vincoli, disuguaglianza: [ 1.18401903e-04  2.33110354e-04 -4.00023311e+00 -3.74297149e+00
+ -2.57028510e-01 -2.82113130e+00 -1.17886870e+00 -3.79738324e-01
+ -3.62026168e+00] , uguaglianza : [3.46162054e-05]		il punto non è di KKT, perchè moltiplicatori mu: [0.16147501]lambda non negativi: [0.55231208 1.08739524 0.         0.         0.         0.
+ 0.         0.         0.        ]  ammissibilità vincoli di disuguaglianza: [ 1.18401903e-04  2.33110354e-04 -4.00023311e+00 -3.74297149e+00
+ -2.57028510e-01 -2.82113130e+00 -1.17886870e+00 -3.79738324e-01
+ -3.62026168e+00]  ammissibilità vincoli di uguaglianza: [3.46162054e-05]  complementarietà: [ 6.53948020e-05  2.53483089e-04 -0.00000000e+00 -0.00000000e+00
+ -0.00000000e+00 -0.00000000e+00 -0.00000000e+00 -0.00000000e+00
+ -0.00000000e+00]  gradiente lagrangiano sufficientemente piccolo: 11.470283464755948
+
+ f = 17.01390366794933		 nf = 48		 violazione dei vincoli, disuguaglianza: [ 4.14405316e-05  8.16133414e-05 -4.00008161e+00 -3.74298979e+00
+ -2.57010210e-01 -2.82114344e+00 -1.17885656e+00 -3.79523819e-01
+ -3.62047618e+00] , uguaglianza : [1.21155816e-05]		il punto non è di KKT, perchè moltiplicatori mu: [0.05651583]lambda non negativi: [0.1933086  0.38070363 0.         0.         0.         0.
+ 0.         0.         0.        ]  ammissibilità vincoli di disuguaglianza: [ 4.14405316e-05  8.16133414e-05 -4.00008161e+00 -3.74298979e+00
+ -2.57010210e-01 -2.82114344e+00 -1.17885656e+00 -3.79523819e-01
+ -3.62047618e+00]  ammissibilità vincoli di uguaglianza: [1.21155816e-05]  complementarietà: [ 8.01081122e-06  3.10704956e-05 -0.00000000e+00 -0.00000000e+00
+ -0.00000000e+00 -0.00000000e+00 -0.00000000e+00 -0.00000000e+00
+ -0.00000000e+00]  gradiente lagrangiano sufficientemente piccolo: 0.0003386856688599987
+
+ f = 17.013903669571974		 nf = 53		 violazione dei vincoli, disuguaglianza: [ 4.14399393e-05  8.16121760e-05 -4.00008161e+00 -3.74298979e+00
+ -2.57010210e-01 -2.82114344e+00 -1.17885656e+00 -3.79523817e-01
+ -3.62047618e+00] , uguaglianza : [1.21154086e-05]		il punto non è di KKT, perchè moltiplicatori mu: [0.1614715]lambda non negativi: [0.5523024  1.08770913 0.         0.         0.         0.
+ 0.         0.         0.        ]  ammissibilità vincoli di disuguaglianza: [ 4.14399393e-05  8.16121760e-05 -4.00008161e+00 -3.74298979e+00
+ -2.57010210e-01 -2.82114344e+00 -1.17885656e+00 -3.79523817e-01
+ -3.62047618e+00]  ammissibilità vincoli di uguaglianza: [1.21154086e-05]  complementarietà: [ 2.28873779e-05  8.87703093e-05 -0.00000000e+00 -0.00000000e+00
+ -0.00000000e+00 -0.00000000e+00 -0.00000000e+00 -0.00000000e+00
+ -0.00000000e+00]  gradiente lagrangiano sufficientemente piccolo: 11.470069246427162
+
+ f = 17.0139775173718		 nf = 58		 violazione dei vincoli, disuguaglianza: [ 1.45039633e-05  2.85672916e-05 -4.00002857e+00 -3.74299619e+00
+ -2.57003809e-01 -2.82114770e+00 -1.17885230e+00 -3.79448728e-01
+ -3.62055127e+00] , uguaglianza : [4.24038208e-06]		il punto non è di KKT, perchè moltiplicatori mu: [0.05651488]lambda non negativi: [0.19330563 0.38073858 0.         0.         0.         0.
+ 0.         0.         0.        ]  ammissibilità vincoli di disuguaglianza: [ 1.45039633e-05  2.85672916e-05 -4.00002857e+00 -3.74299619e+00
+ -2.57003809e-01 -2.82114770e+00 -1.17885230e+00 -3.79448728e-01
+ -3.62055127e+00]  ammissibilità vincoli di uguaglianza: [4.24038208e-06]  complementarietà: [ 2.8036978e-06  1.0876670e-05 -0.0000000e+00 -0.0000000e+00
+ -0.0000000e+00 -0.0000000e+00 -0.0000000e+00 -0.0000000e+00
+ -0.0000000e+00]  gradiente lagrangiano sufficientemente piccolo: 0.00018409620489605975
+
+ f = 17.013977517689824		 nf = 63		 violazione dei vincoli, disuguaglianza: [ 1.45038472e-05  2.85670632e-05 -4.00002857e+00 -3.74299619e+00
+ -2.57003809e-01 -2.82114770e+00 -1.17885230e+00 -3.79448728e-01
+ -3.62055127e+00] , uguaglianza : [4.24034812e-06]		il punto non è di KKT, perchè moltiplicatori mu: [0.16146979]lambda non negativi: [0.55229739 1.08781582 0.         0.         0.         0.
+ 0.         0.         0.        ]  ammissibilità vincoli di disuguaglianza: [ 1.45038472e-05  2.85670632e-05 -4.00002857e+00 -3.74299619e+00
+ -2.57003809e-01 -2.82114770e+00 -1.17885230e+00 -3.79448728e-01
+ -3.62055127e+00]  ammissibilità vincoli di uguaglianza: [4.24034812e-06]  complementarietà: [ 8.01043695e-06  3.10757032e-05 -0.00000000e+00 -0.00000000e+00
+ -0.00000000e+00 -0.00000000e+00 -0.00000000e+00 -0.00000000e+00
+ -0.00000000e+00]  gradiente lagrangiano sufficientemente piccolo: 11.470019515214027
+
+ f = 17.014003368526495		 nf = 68		 violazione dei vincoli, disuguaglianza: [ 5.07634922e-06  9.99885233e-06 -4.00001000e+00 -3.74299843e+00
+ -2.57001569e-01 -2.82114918e+00 -1.17885082e+00 -3.79422446e-01
+ -3.62057755e+00] , uguaglianza : [1.48412183e-06]		il punto non è di KKT, perchè moltiplicatori mu: [0.05651443]lambda non negativi: [0.19330419 0.38075001 0.         0.         0.         0.
+ 0.         0.         0.        ]  ammissibilità vincoli di disuguaglianza: [ 5.07634922e-06  9.99885233e-06 -4.00001000e+00 -3.74299843e+00
+ -2.57001569e-01 -2.82114918e+00 -1.17885082e+00 -3.79422446e-01
+ -3.62057755e+00]  ammissibilità vincoli di uguaglianza: [1.48412183e-06]  complementarietà: [ 9.81279569e-07  3.80706317e-06 -0.00000000e+00 -0.00000000e+00
+ -0.00000000e+00 -0.00000000e+00 -0.00000000e+00 -0.00000000e+00
+ -0.00000000e+00]  gradiente lagrangiano sufficientemente piccolo: 8.481689131986584e-05
+
+ f = 17.014003368575857		 nf = 73		 violazione dei vincoli, disuguaglianza: [ 5.07633121e-06  9.99881687e-06 -4.00001000e+00 -3.74299843e+00
+ -2.57001569e-01 -2.82114918e+00 -1.17885082e+00 -3.79422446e-01
+ -3.62057755e+00] , uguaglianza : [1.48411656e-06]		il punto non è di KKT, perchè moltiplicatori mu: [0.16146922]lambda non negativi: [0.55229572 1.08785333 0.         0.         0.         0.
+ 0.         0.         0.        ]  ammissibilità vincoli di disuguaglianza: [ 5.07633121e-06  9.99881687e-06 -4.00001000e+00 -3.74299843e+00
+ -2.57001569e-01 -2.82114918e+00 -1.17885082e+00 -3.79422446e-01
+ -3.62057755e+00]  ammissibilità vincoli di uguaglianza: [1.48411656e-06]  complementarietà: [ 2.80363602e-06  1.08772462e-05 -0.00000000e+00 -0.00000000e+00
+ -0.00000000e+00 -0.00000000e+00 -0.00000000e+00 -0.00000000e+00
+ -0.00000000e+00]  gradiente lagrangiano sufficientemente piccolo: 11.47001504432492
+
+ f = 17.014012416879126		 nf = 78		 violazione dei vincoli, disuguaglianza: [ 1.77671571e-06  3.49963140e-06 -4.00000350e+00 -3.74299922e+00
+ -2.57000783e-01 -2.82114970e+00 -1.17885030e+00 -3.79413247e-01
+ -3.62058675e+00] , uguaglianza : [5.1944064e-07]		il punto non è di KKT, perchè moltiplicatori mu: [0.05651421]lambda non negativi: [0.19330348 0.38075361 0.         0.         0.         0.
+ 0.         0.         0.        ]  ammissibilità vincoli di disuguaglianza: [ 1.77671571e-06  3.49963140e-06 -4.00000350e+00 -3.74299922e+00
+ -2.57000783e-01 -2.82114970e+00 -1.17885030e+00 -3.79413247e-01
+ -3.62058675e+00]  ammissibilità vincoli di uguaglianza: [5.1944064e-07]  complementarietà: [ 3.43445328e-07  1.33249730e-06 -0.00000000e+00 -0.00000000e+00
+ -0.00000000e+00 -0.00000000e+00 -0.00000000e+00 -0.00000000e+00
+ -0.00000000e+00]  gradiente lagrangiano sufficientemente piccolo: 5.340454387667537e-05
+
+Algortimo terminato con un punto KKT del problema.
+Il punto è
+
+x(1) = 0.9999965003748006
+
+x(2) = 4.742999217384869
+
+x(3) = 3.82114970090346
+
+x(4) = 1.379413246945882
