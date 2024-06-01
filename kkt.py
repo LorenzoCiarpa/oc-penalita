@@ -57,6 +57,8 @@ def isKKT(x, la, mu, m, p) :
     print("vinD ", vinD(x))
     print("ammD", ammD)
     print("ammU", ammU)
+    print("isComp", isComp, "np.linalg.norm(vinD(x)[i] * la[i]) ", np.linalg.norm(vinD(x)[i] * la[i]))
+    print("nullGradLagr", nullGradLagr)
     
     if ammD and ammU and isComp and nullGradLagr : 
         return True

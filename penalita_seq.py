@@ -73,6 +73,16 @@ while True :
             print  ("\nx(",i+1,") =",x[i], "\n")
             file.write("\nx("+str(i+1)+") = "+str(x[i])+ "\n")
         print(f"f_value: {functionP(x, n)}")
+        #Metti print finali
+        '''
+        f*
+        x*
+        VinD(x*)
+        VinU(x*)
+        la*
+        mu*
+        ||NablaLagr(x*)||
+        '''
         import sys
         sys.stdout.write('\a')
         sys.stdout.flush()

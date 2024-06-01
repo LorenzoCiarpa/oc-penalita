@@ -15,4 +15,4 @@ p = 1
 
 DIM = 4
 
-FILENAME_PROBLEM = "Funzione Test Prob1"
+FILENAME_PROBLEM = "Funzione Test Prob1.txt"
