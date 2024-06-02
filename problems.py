@@ -192,24 +192,26 @@ def nablaLagr(Lagr, x, la, mu, n) :
 
 ### FILE2 - 4 ###
 
-# m = 3
+# m = 6
 # p = 0
 
 # def dim() :
 #     return 2
 
 # def starting_point(n) :
-#     return np.array([-2., 1.])
+#     return np.array([20.1 , 5.84])
 
 # def functionP(x, n):
-#     return 100*(x[1]- x[0]**2)**2 +(1-x[0])**2
+#     return (x[0]-10)**3 + (x[1]-20)**3
 
 # def vinD(x) :
-#     g1 = -x[0]*x[1] + 1
-#     g2 = -x[0] - x[1]**2
-#     g3 = x[0] - 0.5
-    
-#     return np.array([g1, g2, g3])
+#     g1 = 100 - (x[0]-5)**2 - (x[1]-5)**2
+#     g2 = (x[1]-5)**2 + (x[0]-6)**2 - 82.81
+#     g3 = x[0] - 100
+#     g4 = 13 - x[0]
+#     g5 = x[1] - 100
+#     g6 = -x[1]
+#     return np.array([g1,g2,g3,g4,g5,g6])
 
 # def vinU(x) :
 #     return np.array([])
@@ -232,3 +234,45 @@ def nablaLagr(Lagr, x, la, mu, n) :
 
 # def nablaLagr(Lagr, x, la, mu, n) :
 #     return grad(Lagr)(x, la, mu, n)
+
+
+
+### FILE1 - 1 ###
+
+# m = 1
+# p = 0
+
+def dim() :
+    return 2
+
+def starting_point(n) :
+    return np.array([-4.9,1.])
+
+def functionP(x, n):
+    return (x[0]-5)**2 + (x[1])**2 - 25
+
+def vinD(x) :
+    g1 = x[0]**2 - x[1]
+    return np.array([g1])
+
+def vinU(x) :
+    return np.array([])
+
+def vincoliP(x): #funzione di penalità
+    return (np.sum((np.maximum(0.0, vinD(x)))**2) + (np.sum(vinU(x)**2)))
+
+def P(x, eps, n): #funzione di penalità
+    return functionP(x, n) + (1 / eps) * vincoliP(x)
+    
+def Lagr(x, la, mu, n) :
+    L = functionP(x, n)
+    for i in range(m) :
+        L += vinD(x)[i] * la[i]
+    #print("Lla", Lla)
+    for j in range(p) :
+        L += vinU(x)[j] * mu[j]
+    #print("Lmu", Lmu)
+    return L
+
+def nablaLagr(Lagr, x, la, mu, n) :
+    return grad(Lagr)(x, la, mu, n)

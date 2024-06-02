@@ -22,18 +22,29 @@ def isKKT(x, la, mu, m, p) :
     trhd1 = 10**(-4)
     trhd2 = 10**(-5)
     
-    #CONTROLLO MOLTIPLICATORE LAMBDA#ù
+    #CONTROLLO MOLTIPLICATORE LAMBDA
     nonNegLa = True
+    # if m != 0 :
+    #     if (la == 0).all() :
+    #         return False
+        
     if m != 0 :
-        if (la == 0).all() :
+        if (la < 0).any() :
             return False
+        
+    # if m != 0 :
+    #     for i in range(la.shape[0]):
+    #         if la[i] < 0:
+    #             return False
             
     
     #CONTROLLO COMPLEMENTARIETà#
-    isComp = 1
+    isComp = True
+    nonCompIndex = 0
     for i in range(m):
         if np.linalg.norm(vinD(x)[i] * la[i]) > 10**(-5): 
             # se almeno un lambda_i*g_i > 0 allora non complementare
+            nonCompIndex = i
             isComp = False
     
     #CONTROLLO LAGRANGIANA#
@@ -57,7 +68,7 @@ def isKKT(x, la, mu, m, p) :
     print("vinD ", vinD(x))
     print("ammD", ammD)
     print("ammU", ammU)
-    print("isComp", isComp, "np.linalg.norm(vinD(x)[i] * la[i]) ", np.linalg.norm(vinD(x)[i] * la[i]))
+    print("isComp", isComp, "norm", np.linalg.norm(vinD(x)[nonCompIndex] * la[nonCompIndex]))
     print("nullGradLagr", nullGradLagr)
     
     if ammD and ammU and isComp and nullGradLagr : 
