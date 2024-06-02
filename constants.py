@@ -10,9 +10,10 @@ delta = 0.01
 
 max_iter_penalita = 10**2
 
-m = 1
-p = 0
+m = 2
+p = 2
 
-DIM = 2
+DIM = 4
 
 FILENAME_PROBLEM = "Funzione Test Prob1.txt"
+FILENAME_STAMPE = "results_pen_seq.txt"

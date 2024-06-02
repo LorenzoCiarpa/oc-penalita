@@ -65,16 +65,16 @@ def troncatoMAIN(eps, delta, x0) :
         #norm_gradient = np.sqrt(grad(function) * grad(function))
         #print("n_itert =",n_iter,"  nf =",nf,"f =",  f,"norma_grad =", norm_gradient)
         if norm_gradient <= delta:
-            print("\nAlgoritmo locale terminato con un punto stazionario, valore di funzione obiettivo:", function(x, n, eps), "\n")
-            for i in range(0, n) :
-                print  ("\nx(",i+1,") =",x[i], "\n")
+            # print("\nAlgoritmo locale terminato con un punto stazionario, valore di funzione obiettivo:", function(x, n, eps), "\n")
+            # for i in range(0, n) :
+            #     print  ("\nx(",i+1,") =",x[i], "\n")
             break
             
         if n_iter > max_iter :
-            print("\nAlgoritmo terminato per massimo numero di iterazioni")
-            #print("\nNorma attuale del gradiente:", norm_gradient)
-            for i in range(0, n) :
-                print  ("\nx(",i+1,") =",x[i], "\n")
+            # print("\nAlgoritmo terminato per massimo numero di iterazioni")
+            # #print("\nNorma attuale del gradiente:", norm_gradient)
+            # for i in range(0, n) :
+            #     print  ("\nx(",i+1,") =",x[i], "\n")
             break
         
         direct = direction(f, nf, n, x, n_iter, eps)
@@ -109,7 +109,7 @@ def troncatoMAIN(eps, delta, x0) :
         #print("------------------- fatta iterazione", n_iter, "-------------------")
         #print("\n")
     
-    print("Iterazioni del Troncato: ", n_iter)
-    print("Norma del gradiente: ", norm_gradient)
+    # print("Iterazioni del Troncato: ", n_iter)
+    # print("Norma del gradiente: ", norm_gradient)
 
     return x

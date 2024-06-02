@@ -3,7 +3,7 @@ from autograd import grad
 
 from constants import *
 
-'''
+
 m = 2
 p = 2
 
@@ -45,7 +45,7 @@ def Lagr(x, la, mu, n) :
 
 def nablaLagr(Lagr, x, la, mu, n) :
     return grad(Lagr)(x, la, mu, n)
-'''
+
 
 
 ### FILE4 - 2 ###
@@ -242,37 +242,37 @@ def nablaLagr(Lagr, x, la, mu, n) :
 # m = 1
 # p = 0
 
-def dim() :
-    return 2
+# def dim() :
+#     return 2
 
-def starting_point(n) :
-    return np.array([-4.9,1.])
+# def starting_point(n) :
+#     return np.array([-4.9,1.])
 
-def functionP(x, n):
-    return (x[0]-5)**2 + (x[1])**2 - 25
+# def functionP(x, n):
+#     return (x[0]-5)**2 + (x[1])**2 - 25
 
-def vinD(x) :
-    g1 = x[0]**2 - x[1]
-    return np.array([g1])
+# def vinD(x) :
+#     g1 = x[0]**2 - x[1]
+#     return np.array([g1])
 
-def vinU(x) :
-    return np.array([])
+# def vinU(x) :
+#     return np.array([])
 
-def vincoliP(x): #funzione di penalità
-    return (np.sum((np.maximum(0.0, vinD(x)))**2) + (np.sum(vinU(x)**2)))
+# def vincoliP(x): #funzione di penalità
+#     return (np.sum((np.maximum(0.0, vinD(x)))**2) + (np.sum(vinU(x)**2)))
 
-def P(x, eps, n): #funzione di penalità
-    return functionP(x, n) + (1 / eps) * vincoliP(x)
+# def P(x, eps, n): #funzione di penalità
+#     return functionP(x, n) + (1 / eps) * vincoliP(x)
     
-def Lagr(x, la, mu, n) :
-    L = functionP(x, n)
-    for i in range(m) :
-        L += vinD(x)[i] * la[i]
-    #print("Lla", Lla)
-    for j in range(p) :
-        L += vinU(x)[j] * mu[j]
-    #print("Lmu", Lmu)
-    return L
+# def Lagr(x, la, mu, n) :
+#     L = functionP(x, n)
+#     for i in range(m) :
+#         L += vinD(x)[i] * la[i]
+#     #print("Lla", Lla)
+#     for j in range(p) :
+#         L += vinU(x)[j] * mu[j]
+#     #print("Lmu", Lmu)
+#     return L
 
-def nablaLagr(Lagr, x, la, mu, n) :
-    return grad(Lagr)(x, la, mu, n)
+# def nablaLagr(Lagr, x, la, mu, n) :
+#     return grad(Lagr)(x, la, mu, n)

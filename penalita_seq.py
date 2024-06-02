@@ -35,6 +35,7 @@ la = np.zeros(m)
 mu = np.zeros(p)
 
 file = open(FILENAME_PROBLEM, "w")
+f_stampe = open(FILENAME_STAMPE, "w")
 
 while True :
     
@@ -43,7 +44,7 @@ while True :
     t = np.linalg.norm(z)
     
     
-    print(f"penalita iter: {n_iter}")
+    # print(f"penalita iter: {n_iter}")
 
     #ARRESTO 1#
     if n_iter > max_iter_penalita :
@@ -67,12 +68,61 @@ while True :
 
     #ARRESTO 2#
     if isKKT(x, la, mu, m, p) == True :
-        print("Algortimo terminato con un punto KKT del problema.\nIl punto è\n")
-        file.write("Algortimo terminato con un punto KKT del problema.\nIl punto è\n")
+
+        print("Algortimo terminato con un punto KKT del problema.\n")
+        f_stampe.write("\n")
+        f_stampe.write("Algortimo terminato con un punto KKT del problema.\n")
+        # ============== Stampo il punto ottimo x* ==================
+        print("Il punto ottimo x* è\n")
+        f_stampe.write("Il punto ottimo x*\n")
+
         for i in range(0, n) :
-            print  ("\nx(",i+1,") =",x[i], "\n")
-            file.write("\nx("+str(i+1)+") = "+str(x[i])+ "\n")
-        print(f"f_value: {functionP(x, n)}")
+            print(f"x({i+1}) = {x[i]}")
+            f_stampe.write(f"x({i+1}) = {x[i]}\n")
+
+        print()
+
+        # ============== Stampo il valore della funzione obiettivo f(x*) ==================
+        print(f"Il valore della funzione obiettivo in x* è: {functionP(x, n)}")
+        f_stampe.write("\n")
+        f_stampe.write(f"Il valore della funzione obiettivo in x*: {functionP(x, n)}")
+
+        print()
+        # ============== Stampo il valore dei vincoli in x* ==================
+        print(f"Il valore dei vincoli in x* è: \n")
+        f_stampe.write("\n")
+        f_stampe.write(f"Il valore dei vincoli in x*: \n")
+
+        for i in range(m) :
+            print(f"Vincolo di disuguaglianza {i+1}: {vinD(x)[i]} \n")
+            f_stampe.write(f"Vincolo di disuguaglianza {i+1}: {vinD(x)[i]} \n")
+
+
+        for j in range(p) :
+            print(f"Vincolo di uguaglianza {j+1}: {vinU(x)[j]} \n")
+            f_stampe.write(f"Vincolo di uguaglianza {j+1}: {vinU(x)[j]} \n")
+
+
+        # ============== Stampo il valore dei moltiplicatoru la* e mu* ==================
+        print()
+        print(f"Il valore dei moltiplicatori: \n")
+        f_stampe.write(f"Il valore dei moltiplicatori: \n")
+
+        for i in range(m) :
+            print(f"Valore di lambda {i+1}: {la[i]} \n")
+            f_stampe.write(f"Valore di lambda {i+1}: {la[i]} \n")
+
+
+        for j in range(p) :
+            print(f"Valore di mu {j+1}: {mu[j]} \n")
+            f_stampe.write(f"Valore di mu {j+1}: {mu[j]} \n")
+
+
+        # ============== Stampo il valore dei moltiplicatoru la* e mu* ==================
+        print()
+        print(f"Il Valore della norma del gradiente della Lagrangiana è: {np.linalg.norm(nablaLagr(Lagr, x, la, mu, n))}")
+        f_stampe.write(f"Il Valore della norma del gradiente della Lagrangiana: {np.linalg.norm(nablaLagr(Lagr, x, la, mu, n))}")
+
         #Metti print finali
         '''
         f*
@@ -98,6 +148,8 @@ while True :
         sngl = "  gradiente lagrangiano sufficientemente piccolo: " + str(t)
         #sKKT = "il punto non è di KKT, perchè " + snnl + sd + su + sic + sngl
         print("n_iter_PEN_SEQ =",n_iter,"  nf_PEN_SEQ =",nf, "f_PEN_SEQ =",  f)
+        f_stampe.write(f"n_iter_PEN_SEQ = {n_iter} nf_PEN_SEQ= {nf} f_PEN_SEQ= {f}\n")
+
         sf = " f = " + str(f)
         snf = " nf = " + str(nf)
         svv = " violazione dei vincoli, disuguaglianza: " + str(vinD(x)) + " , uguaglianza : " + str(vinU(x))
