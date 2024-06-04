@@ -148,7 +148,11 @@ while True :
         sngl = "  gradiente lagrangiano sufficientemente piccolo: " + str(t)
         #sKKT = "il punto non è di KKT, perchè " + snnl + sd + su + sic + sngl
         print("n_iter_PEN_SEQ =",n_iter,"  nf_PEN_SEQ =",nf, "f_PEN_SEQ =",  f)
-        f_stampe.write(f"n_iter_PEN_SEQ = {n_iter} nf_PEN_SEQ= {nf} f_PEN_SEQ= {f}\n")
+        f_stampe.write(f"n_iter_PEN_SEQ = {n_iter} nf_PEN_SEQ= {nf} f_PEN_SEQ= {f} ")
+        
+        kkt_constraint = (np.sum(np.maximum(0.0, vinD(x))) + np.sum(np.abs(vinU(x))))
+        # kkt_constraint = (np.sum((np.maximum(0.0, vinD(x)))**2) + (np.sum(vinU(x)**2)))
+        f_stampe.write(f"Il punto non soddisfa le condizioni di KKT per la seguente violazione di ammissibilita: {kkt_constraint}\n")
 
         sf = " f = " + str(f)
         snf = " nf = " + str(nf)
